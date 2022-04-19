@@ -1,0 +1,8 @@
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\bin\Release\ModularRadioSystem.dll
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\bin\Release\ModularRadioSystem.pdb
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\obj\Release\ModularRadioSystem.csproj.AssemblyReference.cache
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\obj\Release\ModularRadioSystem.csproj.CoreCompileInputs.cache
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\obj\Release\ModularRadioSystem.dll
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\obj\Release\ModularRadioSystem.pdb
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\obj\Release\ModularRadioSystem.Properties.Resources.resources
+D:\Projekte Skripts\ModularRadioSystem\ModularRadioSystem\obj\Release\ModularRadioSystem.csproj.GenerateResource.cache
