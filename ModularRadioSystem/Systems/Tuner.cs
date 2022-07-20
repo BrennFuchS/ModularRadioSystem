@@ -152,7 +152,8 @@ namespace ModularRadioSystem
 				{
 					if (!speaker.SC.isPlaying)
 					{
-						speaker.SC.clip = copiedClip;
+						speaker.Init();
+                        speaker.SC.clip = copiedClip;
 						currentClip = station.clip.name;
 						speaker.SC.Play();
 						speaker.SC.time = station.time;

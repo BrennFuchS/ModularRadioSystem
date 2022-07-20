@@ -43,7 +43,8 @@ namespace ModularRadioSystem
 						else if (obj is string)
 						{
 							clip = AudioImport.LoadAudioFromFile((string)obj, false, true);
-						}
+                            ModConsole.Print("MRS : Loaded AD Clip " + clip.name + " for " + name);
+                        }
 						time = 0f;
 						startTime = Time.time;
 						adPlayed = true;
@@ -58,7 +59,7 @@ namespace ModularRadioSystem
 						else if (obj2 is string)
 						{
 							clip = AudioImport.LoadAudioFromFile((string)obj2, false, true);
-							ModConsole.Print("MRS : Loaded Clip " + clip.name + " for " + name);
+							ModConsole.Print("MRS : Loaded Music Clip " + clip.name + " for " + name);
 						}
 						time = 0f;
 						titlesPlayed++;
@@ -73,7 +74,7 @@ namespace ModularRadioSystem
 						if (!music.Contains(clip) && !ads.Contains(clip))
 						{
 							Object.Destroy(clip);
-							ModConsole.Print("MRS : Freed memory from Clip " + clip.name + " in " + name);
+							ModConsole.Print("MRS : Destroyed Clip " + clip.name + " from " + name);
 						}
 						clip = null;
 					}

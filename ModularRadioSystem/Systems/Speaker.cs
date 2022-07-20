@@ -41,6 +41,14 @@ namespace ModularRadioSystem
 			SS.Play();
 		}
 
+		internal void Init()
+        {
+            ahpf[0].enabled = !hasSubwoofers;
+            ahpf[1].enabled = !hasSubwoofers;
+            alpf[0].enabled = hasSubwoofers;
+            alpf[1].enabled = hasSubwoofers;
+        }
+
 		private void Start()
 		{
 			raycast = Resources.FindObjectsOfTypeAll<InteractionRaycast>().First<InteractionRaycast>();
@@ -50,11 +58,7 @@ namespace ModularRadioSystem
 
 		private void Update()
 		{
-			ahpf[0].enabled = !hasSubwoofers;
-			ahpf[1].enabled = !hasSubwoofers;
-			alpf[0].enabled = hasSubwoofers;
-			alpf[1].enabled = hasSubwoofers;
-			delay -= Time.deltaTime;
+            delay -= Time.deltaTime;
 			if (raycast.GetHit(trigger))
 			{
 				guiUse.Value = true;

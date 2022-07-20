@@ -30,8 +30,7 @@ namespace ModularRadioSystem
 			catch (Exception ex)
 			{
 				ModConsole.Error(ex.Message);
-				if (ModLoader.devMode)
-					ModConsole.Error(ex.ToString());
+				//ModConsole.Error(ex.ToString());
 				Console.WriteLine(ex);
 				result = null;
 			}
